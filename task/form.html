@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <section>
+       <form  action ="/practice.html" method="POST">
+          <h1>Burger Site</h1>
+          <p>A hamburger is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled.</p>
+       </form>
+       <form>
+            
+           <label for="username">Text</label>
+           <input type="text" name="username" value="Davie">
+            <label for="password">Password</label>
+            <input type="password" name="user-pw">
+            <label for="amount">Amount</label>
+            <input type="number" step="1" name="amount">
+            <label for="cooked">Cooked</label>
+            <input type="range" name="doneness" id="doneness" min="0 " max="5" step="0.5">
+       </form>
+    </section>
+    <section class="topping">
+        <label for="options">Fruits</label>
+        <input id="lettuce"  type="checkbox" name="topping"  value="lettuce">
+        <label for ="option">Veggie</label>
+        <input id="tomato"   type="checkbox" name="topping"  value="tomato">
+        <label for="option">nothing</label>
+        <input id="lichi"    type="checkbox" name="topping"  value="lichi">
+    </section>
+</body>
+</html>
