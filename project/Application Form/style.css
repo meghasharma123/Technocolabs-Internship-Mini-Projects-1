@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+    background-color: moccasin;
+}
+
+.a{
+  padding: 13.5px;
+}
+#btn{
+    background-color: purple;
+    color: ivory;
+}
+input{
+    border: 3px solid rgb(198, 152, 251);
+}

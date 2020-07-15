@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <h1>Application Form</h1> 
+
+    <form action="data.html" method="GET">
+        <div class="a">
+        <label for="name" >Name:</label>
+        <input type="text" placeholder="Name" id="name" required><br>
+        </div>
+
+        <div class="a">
+        <label for="date">Date:</label>
+        <input type="Date"><br>
+        </div>
+        
+        <div class="a">
+        <label for="Nationality">Nationality:</label>
+        <input type="text" placeholder="Country"><br>
+        </div>
+
+        <div class="a">
+        <label for="name">Farther's name:</label>
+        <input type="text" placeholder="Farther's Name"><br>
+        </div>
+
+        <div class="a">
+        <label for="address">Present Address:</label>
+        <input type="text" placeholder="Address"><br>
+        </div>
+
+        <div class="a">
+        <label for="email">Email id:</label>
+        <input type="email" placeholder="Email" required><br>
+        </div>
+
+        <div class="a">
+        <label for="number">Phone Number:</label>
+        <input type="text" placeholder="Phone Number" required><br>
+        </div>
+
+        <div class="a">
+        <label for="Position">Position Applied For:</label>
+        <input type="text" placeholder=""><br>
+        </div>
+
+        <div class="a">
+        <label for="Skills">Skills:</label>
+        <input type="text" placeholder=""><br>
+        </div>
+
+        <div class="a">
+        <label for="Qualification">Education Qualification:</label>
+        <input type="text" placeholder=""><br>
+        </div>
+        
+        <div class="a">
+        <label for="Year">Experience Year:</label>
+        <input type="number" max="20" min="0"><br>
+        </div>
+    
+        <div class="a"> <button type="submit" onclick="sub()" id="btn"> Submit</button>     </div>
+    </form>
+</body>
+<script>
+    function testJS() {
+    var b = document.getElementById('name').value,
+        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+
+    document.location.href = url;
+}
+</script>
+</html>
