@@ -8,6 +8,7 @@ const getUserChoice = (userInput) =>{
 
 if(userInput === 'rock'||userInput === 'paper'|| userInput ==='scissor'){
     console.log('Enetr data is valid');
+    return userInput;
 }
 else{
     console.log('Invalid User Input');
@@ -57,4 +58,17 @@ const determineWinner = (userInput , computerChoice ) =>{
     }
 }
 
- determineWinner();
+ 
+ 
+ var playGame = () => {
+     var userChoice = getUserChoice('paper');
+     console.log(userChoice);
+     var comChoice = getComputerChoice();
+     console.log(comChoice);
+
+    determineWinner(userChoice , comChoice);
+
+ }
+
+ playGame();
+
